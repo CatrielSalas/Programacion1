@@ -1,0 +1,6 @@
+*.exe
+*.o
+*.ppu
+*.out
+*.err
+*.bak
