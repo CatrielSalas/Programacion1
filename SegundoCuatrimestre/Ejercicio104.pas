@@ -8,7 +8,6 @@ var
     mes, dia, tempMinima: integer;
     suma, prom: real;
     temp: array[1..3] of integer; // Usamos 1 solo vector de 3 posiciones para los días
-
 begin
     clrscr;
     for mes := 1 to 3 do
@@ -18,7 +17,7 @@ begin
         WriteLn('=== MES ', mes, ' ===');
         for dia := 1 to 3 do
         begin
-            Write('Dia ', dia, ': '); ReadLn(temp[dia]);
+            Write('Dia ', dia, ': Temperatura: '); ReadLn(temp[dia]);
             suma := suma + temp[dia];
             if temp[dia] < tempMinima then tempMinima := temp[dia];
         end;
@@ -28,8 +27,7 @@ begin
         Write('Dias que NO superaron el promedio: ');
         
         for dia := 1 to 3 do
-            if temp[dia] <= prom then Write('Dia ', dia, ' ');
-            
+            if temp[dia] <= prom then Write('Dia ', dia, ' ');  
         WriteLn; WriteLn;
     end;
     readkey;
