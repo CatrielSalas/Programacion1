@@ -37,7 +37,7 @@ begin
     for i := 1 to 5 do
         Write(vecNumeros[i]:0:2, ' ');
 
-    { Modificamos el vector }
+
     vecNumeros[pos1] := valor1;
     vecNumeros[pos2] := valor2;
 
