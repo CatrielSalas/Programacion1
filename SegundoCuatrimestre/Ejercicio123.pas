@@ -21,21 +21,25 @@ begin
                 ReadLn(vec[i]);
               end;
 
-        
             for i := 1 to n - 1 do
               begin
-            for j := i + 1 to n do
+                for j := i + 1 to n do
+                  begin
+                        if vec[i] < vec[j] then
+                        begin
+                            aux := vec[i];
+                            vec[i] := vec[j];
+                            vec[j] := aux;
+                        end;
+                  end;
+              end;
+
+            Write('Orden de mayor a menor: ');
+            for i:= 1 to n do
               begin
-                if vec[i] < vec[j] then
-                    begin
-                        aux := vec[i];
-                        vec[i] := vec[j];
-                        vec[j] := aux;
-                    Write('Orden de mayor a menor: ');
-                    Write(vec[i],'  ');
-                    end;
-                end;
-             end;
+                Write(vec[i],'  ');
+              end;
+
         k:=1;
         for i:= 1 to m do
           begin
@@ -44,6 +48,17 @@ begin
                 matriz[i,j]:= vec[k];
                 k:= k +1;
                 end;
+          end;
+          WriteLn;
+          WriteLn('Matriz pasada ');
+  
+          for i := 1 to m do
+          begin
+            for j := 1 to p do
+            begin
+              Write(matriz[i, j]:4);
+            end;
+            WriteLn; 
           end;
     readkey;
 end.
