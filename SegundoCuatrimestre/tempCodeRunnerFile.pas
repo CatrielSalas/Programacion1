@@ -1,1 +1,4 @@
- suma:= suma + matriz1[fila,columna];
+ for i:= 1 to vector1 do
+        begin
+          
+        end;
