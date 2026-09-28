@@ -1,4 +1,4 @@
- for i:= 1 to vector1 do
-        begin
-          
-        end;
+      begin
+     write('ingrese 1er vector: '); 
+     cargar(v1);
+     end;
