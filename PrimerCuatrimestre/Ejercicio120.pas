@@ -33,14 +33,14 @@ begin
     Write('Ingrese dinero: ');
     ReadLn(dinero);
 
-    (* Convertir a pesos *)
+    
     case moneda of
       1: dineroPesos := dinero;
       2: dineroPesos := dinero * 2.5;
       3: dineroPesos := dinero * 3.25;
     end;
 
-    (* Calcular costo *)
+ 
     if (totalBoletos + pasajes) <= 70 then
     begin
       if dineroPesos >= pasajes * precio then

@@ -1,2 +1,1 @@
-
-            resFactorial:=1;
+,

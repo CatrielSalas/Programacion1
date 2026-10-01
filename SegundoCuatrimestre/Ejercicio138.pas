@@ -3,7 +3,7 @@ componentes}
 
 program ejercicio138;
 uses crt;
-const n = 3;
+const n = 1;
 
 type vector = array[1..n] of integer;
 
